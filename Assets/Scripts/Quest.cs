@@ -1,18 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
-public class Quest : MonoBehaviour
+[CreateAssetMenu(menuName = "QuestData")]
+public class Quest : ScriptableObject
 {
-    [SerializeField] bool IsFinished;
-    [SerializeField] bool IsStarted;
-    public int[] Objectives;
+    public bool IsFinished;
+    public bool IsStarted;
+    public Objective[] Objectifs;
 
    public void QuestFinished()
-        {
+    {
         IsFinished = true;
-        }
+    }
 
    public void StartQuest()
     {
