@@ -6,9 +6,9 @@ using UnityEngine;
 public class Objective : ScriptableObject
 {
     [SerializeField] string Name;
-    [SerializeField] int MaxValue;
-    [SerializeField] int StartValue;
-    [SerializeField] int ActualValue;
-    [SerializeField] bool IsFinished;
-    [SerializeField] string CollectibleType;
+    public int MaxValue;
+    public int StartValue;
+    public int ActualValue;
+    public bool IsFinished;
+    public string CollectibleType;
 }
