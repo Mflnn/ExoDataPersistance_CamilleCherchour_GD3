@@ -4,5 +4,5 @@ using UnityEngine;
 
 public interface IPNJ
 {
-    public void StartDialogue();
+    public void InteractionPNJ();
 }

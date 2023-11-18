@@ -16,7 +16,7 @@ public class PlayerCollisions : MonoBehaviour
         IPNJ iPNJ = other.GetComponent<PNJ>();
         if(iPNJ != null)
         {
-            iPNJ.StartDialogue();
+            iPNJ.InteractionPNJ();
         }
     }
 }

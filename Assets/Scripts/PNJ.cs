@@ -4,8 +4,36 @@ using UnityEngine;
 
 public class PNJ : MonoBehaviour, IPNJ
 {
-    public void StartDialogue()
+    public Dialogue[] Sentences;
+    public Quest Quete;
+    public int StartSentence;
+    public int EndSentence;
+    public int IntermediateSentence;
+    public void InteractionPNJ()
     {
-        Debug.Log("test");
+        if (!Quete.IsStarted)
+        {
+            DialogueStart(StartSentence);
+            
+            if(DialogueStart:QuestStarted)
+            { 
+                
+            }
+        }
+        else
+        {
+            if (!Quete.IsFinished)
+            {
+                DialogueStart(IntermediateSentence);
+            }
+        }
+        
+        
+    }
+
+    public void DialogSystem()
+    {
+        Start(int StartLineNumber);
+        Quete.IsStarted = true;
     }
 }
