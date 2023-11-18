@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Collectible : MonoBehaviour,ICollectible
 {
-    [SerializeField] int _value;
+    public int _value;
     [SerializeField] ScoreDatas _scoreData;
+    public string collectibleType;
 
     public void Collect()
     {

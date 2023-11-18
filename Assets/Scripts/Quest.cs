@@ -5,9 +5,10 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "QuestData")]
 public class Quest : ScriptableObject
 {
-    public bool IsFinished;
-    public bool IsStarted;
+    public bool IsFinished = false;
+    public bool IsStarted= false;
     public Objective[] Objectives;
+    
 
    public void QuestFinished()
     {
@@ -49,10 +50,12 @@ public class Quest : ScriptableObject
     {
         for (int i = 0; i < Objectives.Length; i++)
         {
-            if (Objectives[i].IsFinished)
+            if (collectible.collectibleType == Objectives[i].CollectibleType)
             {
-
+                Objectives[i].ActualValue += collectible._value;
+                CheckObjective(i);
             }
+            
         }
     }
 }
