@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74aadee8e11933243806af266d824e65, type: 3}
+  m_Name: IntermediateSentence
+  m_EditorClassIdentifier: 
+  SentenceIndex: 1
+  LongSentence: "Tu crois vraiment qu'il y a assez de minerais pour faire une \xE9p\xE9e
+    l\xE0 ? Une fourchete \xE0 la limite...Allez magnes toi !"
+  ShortSentence: 
+  NomPersoActif: Forgeron
+  IsEndingSentence: 0
+  answer1: 0
+  answer2: 0
