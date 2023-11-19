@@ -10,13 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 74aadee8e11933243806af266d824e65, type: 3}
-  m_Name: EndingSentence
+  m_Name: Answer2
   m_EditorClassIdentifier: 
-  SentenceIndex: 2
-  LongSentence: "Et ben c'est pas trop t\xF4t ! J'ai failli mourir de vieillesse
-    !"
+  SentenceIndex: 3
+  LongSentence: "Je suis fan de Cloud et je veux une \xE9p\xE9e comme lui !"
   ShortSentence: 
-  NomPersoActif: Forgeron
-  IsEndingSentence: 1
-  answer1: 0
-  answer2: 0
+  NomPersoActif: Fan de FFXIV
+  IsEndingSentence: 0
+  answer1: 5
+  answer2: -1

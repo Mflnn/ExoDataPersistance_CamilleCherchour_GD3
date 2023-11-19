@@ -804,7 +804,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c23a87c090fe314bb2b48fe12099d14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Sentences: []
+  Sentences:
+  - {fileID: 11400000, guid: 3f8299628e7eb6744a5f4ceb1b3ed67d, type: 2}
   Quete: {fileID: 11400000, guid: 5babb0fad6d74e14abe2ec62f4fbcd5a, type: 2}
   StartSentence: 0
   EndSentence: 1

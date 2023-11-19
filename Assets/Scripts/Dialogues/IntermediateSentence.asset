@@ -17,6 +17,6 @@ MonoBehaviour:
     l\xE0 ? Une fourchete \xE0 la limite...Allez magnes toi !"
   ShortSentence: 
   NomPersoActif: Forgeron
-  IsEndingSentence: 0
-  answer1: 0
+  IsEndingSentence: 1
+  answer1: -1
   answer2: 0

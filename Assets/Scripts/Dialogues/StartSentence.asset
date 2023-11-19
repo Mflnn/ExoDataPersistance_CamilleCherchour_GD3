@@ -18,5 +18,5 @@ MonoBehaviour:
   ShortSentence: 
   NomPersoActif: Forgeron
   IsEndingSentence: 0
-  answer1: 1
-  answer2: 0
+  answer1: 3
+  answer2: -1

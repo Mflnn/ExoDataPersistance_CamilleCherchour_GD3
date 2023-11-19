@@ -23,13 +23,6 @@ public class PNJ : MonoBehaviour, IPNJ
         if (!Quete.IsStarted)
         {
             DialogueStart(StartSentence);
-
-            if (Quete.IsStarted)
-            {
-                return;
-            }
-
-
         }
         else
         {
