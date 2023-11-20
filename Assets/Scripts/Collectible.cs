@@ -7,10 +7,12 @@ public class Collectible : MonoBehaviour,ICollectible
     public int _value;
     [SerializeField] ScoreDatas _scoreData;
     public string collectibleType;
+    [SerializeField] Quest _questData;
 
     public void Collect()
     {
-        _scoreData.UpdateScoreValue(_value);
+        _questData.UpdateObjective(this);
+        //_scoreData.UpdateScoreValue(_value);
         Destroy(gameObject);
     }
 }

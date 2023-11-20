@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff8bb20086e6ced429fbd23f103e3142, type: 3}
   m_Name: QueteForgeron
   m_EditorClassIdentifier: 
-  IsFinished: 0
+  IsFinished: 1
   IsStarted: 0
   Objectives:
   - {fileID: 11400000, guid: 602e5b0d09f3edd419de9f4eec7b9f00, type: 2}
