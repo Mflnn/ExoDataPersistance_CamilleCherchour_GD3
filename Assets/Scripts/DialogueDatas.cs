@@ -6,4 +6,9 @@ using UnityEngine;
 public class DialogueDatas : ScriptableObject
 {
     public Dialogue[] Sentences;
+
+    public void StartTalking(int DialogSentenceNumber)
+    {
+
+    }
 }
