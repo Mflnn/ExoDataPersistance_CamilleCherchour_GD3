@@ -993,6 +993,7 @@ GameObject:
   - component: {fileID: 1035080168}
   - component: {fileID: 1035080167}
   - component: {fileID: 1035080166}
+  - component: {fileID: 1035080171}
   m_Layer: 0
   m_Name: PNJ
   m_TagString: Untagged
@@ -1035,11 +1036,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c23a87c090fe314bb2b48fe12099d14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Sentences: []
   Quete: {fileID: 11400000, guid: 5babb0fad6d74e14abe2ec62f4fbcd5a, type: 2}
   StartSentence: 0
-  EndSentence: 1
-  IntermediateSentence: 2
+  EndSentence: 0
+  IntermediateSentence: 0
 --- !u!23 &1035080168
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1105,6 +1105,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1035080171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1035080165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba381e0379a8f5044b80939b0c987b94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _DialogDatas: {fileID: 11400000, guid: 0525f8bb13c828240a2e897b6f3f64f5, type: 2}
+  _UIDialog: {fileID: 1720834178}
+  _UIDialogAnswers: {fileID: 1720834177}
 --- !u!1 &1084731215
 GameObject:
   m_ObjectHideFlags: 0
@@ -1117,7 +1132,7 @@ GameObject:
   - component: {fileID: 1084731218}
   - component: {fileID: 1084731217}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TextDialogueText (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1139,8 +1154,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 230.1699, y: 31.0953}
+  m_AnchoredPosition: {x: -1.3378, y: 0.4459}
+  m_SizeDelta: {x: 247.1156, y: 46.2571}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1084731217
 MonoBehaviour:
@@ -1987,7 +2002,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _DialogPanel: {fileID: 2086912383}
-  _longSentenceText: {fileID: 0}
+  _longSentenceText: {fileID: 1084731217}
 --- !u!1 &1732923338
 GameObject:
   m_ObjectHideFlags: 0
@@ -2777,7 +2792,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.75753784, y: -110.350006}
+  m_AnchoredPosition: {x: 0.75756836, y: -110.350006}
   m_SizeDelta: {x: -179.5622, y: -220.6909}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2086912385

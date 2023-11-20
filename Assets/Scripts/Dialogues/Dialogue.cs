@@ -1,9 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
-[CreateAssetMenu(menuName = "Dialogue")]
-public class Dialogue : ScriptableObject
+[System.Serializable]
+public struct Dialogue
 {
     public int SentenceIndex;
     public string LongSentence;
@@ -12,4 +9,5 @@ public class Dialogue : ScriptableObject
     public bool IsEndingSentence;
     public int answer1;
     public int answer2;
+    public bool QuestStarted;
 }

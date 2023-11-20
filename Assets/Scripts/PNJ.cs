@@ -5,14 +5,15 @@ using TMPro;
 
 public class PNJ : MonoBehaviour, IPNJ
 {
-    public Dialogue[] Sentences;
     public Quest Quete;
     public int StartSentence;
     public int EndSentence;
     public int IntermediateSentence;
+    private DialogSystem _dialogSystem;
 
-    public void DialogueStart(int StartLineNumber)
+    public void Start ()
     {
+        _dialogSystem = GetComponent<DialogSystem>();
         Quete.IsStarted = true;
 
 
@@ -22,18 +23,18 @@ public class PNJ : MonoBehaviour, IPNJ
     {
         if (!Quete.IsStarted)
         {
-            DialogueStart(StartSentence);
+            _dialogSystem.StartTalking(StartSentence);
         }
         else
         {
             if (!Quete.IsFinished)
             {
-                DialogueStart(IntermediateSentence);
+                _dialogSystem.StartTalking(IntermediateSentence);
             }
 
             else
             {
-                DialogueStart(EndSentence);
+                _dialogSystem.StartTalking(EndSentence);
             }
         }
 

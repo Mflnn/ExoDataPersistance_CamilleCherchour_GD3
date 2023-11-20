@@ -8,7 +8,7 @@ public class DialogSystem : MonoBehaviour
     [SerializeField] private UIDialogLong _UIDialog;
     [SerializeField] private UIDialogAnswers _UIDialogAnswers;
 
-    public void StartTarlking(int DialogueSentenceNumber)
+    public void StartTalking(int DialogueSentenceNumber)
     {
         _UIDialog.ShowLongDialog(_DialogDatas.Sentences[DialogueSentenceNumber].LongSentence);
         string[] answers = new string[2];
