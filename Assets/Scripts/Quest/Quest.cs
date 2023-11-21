@@ -6,12 +6,14 @@ using UnityEngine;
 public class Quest : ScriptableObject
 {
     [SerializeField] public bool IsFinished = false;
-    [SerializeField] public bool IsStarted= false;
+    [SerializeField] public bool IsStarted = false;
     public Objective[] Objectives;
 
+   
    public void QuestFinished()
     {
         IsFinished = true;
+
     }
 
    public void StartQuest()

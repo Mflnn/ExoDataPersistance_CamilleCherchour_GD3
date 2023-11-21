@@ -9,6 +9,7 @@ public class DialogSystem : MonoBehaviour
     [SerializeField] private UIDialogAnswers _UIDialogAnswers;
     public PlayerMovement _Player;
     [SerializeField] Quest quest;
+    public UIQuest _UIQuest;
 
     private int actualSentence;
 
@@ -36,6 +37,7 @@ public class DialogSystem : MonoBehaviour
         if (_DialogDatas.Sentences[DialogueSentenceNumber].QuestStarted == true)
         {
             quest.StartQuest();
+            _UIQuest.ShowQuestUI();
         }
 
         _UIDialogAnswers.ShowAnswers(answers);
