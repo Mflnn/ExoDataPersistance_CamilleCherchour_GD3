@@ -14,31 +14,28 @@ public class PNJ : MonoBehaviour, IPNJ
     public void Start ()
     {
         _dialogSystem = GetComponent<DialogSystem>();
-        Quete.IsStarted = true;
-
-
-        
     }
     public void InteractionPNJ()
     {
         if (!Quete.IsStarted)
         {
             _dialogSystem.StartTalking(StartSentence);
+            Debug.Log("StartSentence");
         }
         else
         {
             if (!Quete.IsFinished)
             {
                 _dialogSystem.StartTalking(IntermediateSentence);
+                Debug.Log("middleSentence");
             }
 
             else
             {
                 _dialogSystem.StartTalking(EndSentence);
+                Debug.Log("endSentence");
             }
         }
-
-
     }
 
     

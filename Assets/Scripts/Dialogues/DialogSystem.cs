@@ -8,6 +8,7 @@ public class DialogSystem : MonoBehaviour
     [SerializeField] private UIDialogLong _UIDialog;
     [SerializeField] private UIDialogAnswers _UIDialogAnswers;
     public PlayerMovement _Player;
+    [SerializeField] Quest quest;
 
     private int actualSentence;
 
@@ -31,7 +32,11 @@ public class DialogSystem : MonoBehaviour
             }
 
         }
-        
+
+        if (_DialogDatas.Sentences[DialogueSentenceNumber].QuestStarted == true)
+        {
+            quest.StartQuest();
+        }
 
         _UIDialogAnswers.ShowAnswers(answers);
         _Player.InDialogue = true;

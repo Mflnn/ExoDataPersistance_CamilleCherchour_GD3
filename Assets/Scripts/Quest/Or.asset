@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Or
   m_EditorClassIdentifier: 
   Name: Minerai d'Or
-  MaxValue: 0
+  MaxValue: 1
   StartValue: 1
   ActualValue: 0
   IsFinished: 0

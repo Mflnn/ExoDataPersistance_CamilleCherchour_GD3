@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Bronze
   m_EditorClassIdentifier: 
   Name: Minerai de Bronze
-  MaxValue: 0
+  MaxValue: 6
   StartValue: 6
   ActualValue: 0
   IsFinished: 0

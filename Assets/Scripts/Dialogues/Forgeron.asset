@@ -67,7 +67,7 @@ MonoBehaviour:
     QuestStarted: 0
   - SentenceIndex: 6
     LongSentence: "Et ben c'est pas trop t\xF4t ! J'ai failli mourir de vieillesse
-      !"
+      ! J'vais me mettre au travail..."
     ShortSentence: ...
     NomPersoActif: PNJ
     IsEndingSentence: 0

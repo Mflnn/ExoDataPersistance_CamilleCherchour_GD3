@@ -5,10 +5,9 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "QuestData")]
 public class Quest : ScriptableObject
 {
-    public bool IsFinished = false;
-    public bool IsStarted= false;
+    [SerializeField] public bool IsFinished = false;
+    [SerializeField] public bool IsStarted= false;
     public Objective[] Objectives;
-    
 
    public void QuestFinished()
     {

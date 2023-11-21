@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Fer
   m_EditorClassIdentifier: 
   Name: Minerai de Fer
-  MaxValue: 0
+  MaxValue: 2
   StartValue: 2
   ActualValue: 0
   IsFinished: 0
