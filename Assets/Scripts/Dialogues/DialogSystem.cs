@@ -7,6 +7,7 @@ public class DialogSystem : MonoBehaviour
     [SerializeField] private DialogueDatas _DialogDatas;
     [SerializeField] private UIDialogLong _UIDialog;
     [SerializeField] private UIDialogAnswers _UIDialogAnswers;
+    public PlayerMovement _Player;
 
     private int actualSentence;
 
@@ -33,6 +34,7 @@ public class DialogSystem : MonoBehaviour
         
 
         _UIDialogAnswers.ShowAnswers(answers);
+        _Player.InDialogue = true;
 
         if (_DialogDatas.Sentences[DialogueSentenceNumber].IsEndingSentence == true)
         {
@@ -55,6 +57,7 @@ public class DialogSystem : MonoBehaviour
     public void EndDialogue()
     {
         _UIDialog.HideDialog();
+        _Player.InDialogue = false;
     }
 
     

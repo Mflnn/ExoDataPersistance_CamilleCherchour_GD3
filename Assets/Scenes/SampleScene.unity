@@ -1011,6 +1011,7 @@ MonoBehaviour:
   _DialogDatas: {fileID: 11400000, guid: 0525f8bb13c828240a2e897b6f3f64f5, type: 2}
   _UIDialog: {fileID: 1720834178}
   _UIDialogAnswers: {fileID: 1720834177}
+  _Player: {fileID: 1956359616}
 --- !u!1 &1044725888
 GameObject:
   m_ObjectHideFlags: 0
@@ -2681,6 +2682,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 2
+  InDialogue: 0
 --- !u!136 &1956359617
 CapsuleCollider:
   m_ObjectHideFlags: 0
