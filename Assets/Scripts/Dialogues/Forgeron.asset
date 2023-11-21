@@ -42,8 +42,8 @@ MonoBehaviour:
     LongSentence: Et bah barre toi alors
     ShortSentence: ...
     NomPersoActif: PNJ
-    IsEndingSentence: 1
-    answer1: -1
+    IsEndingSentence: 0
+    answer1: 7
     answer2: -1
     QuestStarted: 0
   - SentenceIndex: 4
@@ -52,8 +52,8 @@ MonoBehaviour:
       pour la construire, alors reviens avec ton matos !"
     ShortSentence: ...
     NomPersoActif: PNJ
-    IsEndingSentence: 1
-    answer1: -1
+    IsEndingSentence: 0
+    answer1: 7
     answer2: -1
     QuestStarted: 1
   - SentenceIndex: 5
@@ -61,8 +61,8 @@ MonoBehaviour:
       l\xE0 ? Une fourchete \xE0 la limite...Allez magnes toi !"
     ShortSentence: ...
     NomPersoActif: PNJ
-    IsEndingSentence: 1
-    answer1: -1
+    IsEndingSentence: 0
+    answer1: 7
     answer2: -1
     QuestStarted: 0
   - SentenceIndex: 6
@@ -70,7 +70,16 @@ MonoBehaviour:
       !"
     ShortSentence: ...
     NomPersoActif: PNJ
+    IsEndingSentence: 0
+    answer1: 7
+    answer2: -1
+    QuestStarted: 0
+  - SentenceIndex: 7
+    LongSentence: "Et ben c'est pas trop t\xF4t ! J'ai failli mourir de vieillesse
+      !"
+    ShortSentence: ...
+    NomPersoActif: PNJ
     IsEndingSentence: 1
-    answer1: -1
+    answer1: 7
     answer2: -1
     QuestStarted: 0
