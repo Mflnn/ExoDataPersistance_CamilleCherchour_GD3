@@ -34,7 +34,11 @@ public class DialogSystem : MonoBehaviour
 
         _UIDialogAnswers.ShowAnswers(answers);
 
-        EndDialogue();
+        if (_DialogDatas.Sentences[DialogueSentenceNumber].IsEndingSentence == true)
+        {
+            EndDialogue();
+        }
+            
     }
 
     public void SelectAnswer(int  answerNumber)
@@ -50,12 +54,7 @@ public class DialogSystem : MonoBehaviour
 
     public void EndDialogue()
     {
-        Debug.Log(dialogue.IsEndingSentence);
-        if (dialogue.IsEndingSentence == true)
-        {
-          _UIDialog.HideDialog();
-            Debug.Log("panel fermé");
-        }
+        _UIDialog.HideDialog();
     }
 
     

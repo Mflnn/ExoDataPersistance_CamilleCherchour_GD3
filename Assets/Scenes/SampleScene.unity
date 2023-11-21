@@ -1011,15 +1011,6 @@ MonoBehaviour:
   _DialogDatas: {fileID: 11400000, guid: 0525f8bb13c828240a2e897b6f3f64f5, type: 2}
   _UIDialog: {fileID: 1720834178}
   _UIDialogAnswers: {fileID: 1720834177}
-  dialogue:
-    SentenceIndex: 0
-    LongSentence: 
-    ShortSentence: 
-    NomPersoActif: 
-    IsEndingSentence: 0
-    answer1: 0
-    answer2: 0
-    QuestStarted: 0
 --- !u!1 &1044725888
 GameObject:
   m_ObjectHideFlags: 0
