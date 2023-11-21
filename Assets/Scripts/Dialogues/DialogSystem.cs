@@ -7,6 +7,7 @@ public class DialogSystem : MonoBehaviour
     [SerializeField] private DialogueDatas _DialogDatas;
     [SerializeField] private UIDialogLong _UIDialog;
     [SerializeField] private UIDialogAnswers _UIDialogAnswers;
+
     private int actualSentence;
 
     public void StartTalking(int DialogueSentenceNumber)
@@ -33,6 +34,7 @@ public class DialogSystem : MonoBehaviour
 
         _UIDialogAnswers.ShowAnswers(answers);
 
+        EndDialogue();
     }
 
     public void SelectAnswer(int  answerNumber)
@@ -44,6 +46,17 @@ public class DialogSystem : MonoBehaviour
         {
             StartTalking(_DialogDatas.Sentences[actualSentence].answer2);
         }
-        
     }
+
+    public void EndDialogue()
+    {
+        Debug.Log(dialogue.IsEndingSentence);
+        if (dialogue.IsEndingSentence == true)
+        {
+          _UIDialog.HideDialog();
+            Debug.Log("panel fermé");
+        }
+    }
+
+    
 }

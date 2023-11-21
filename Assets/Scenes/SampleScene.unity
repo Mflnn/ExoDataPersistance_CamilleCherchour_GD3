@@ -1011,6 +1011,15 @@ MonoBehaviour:
   _DialogDatas: {fileID: 11400000, guid: 0525f8bb13c828240a2e897b6f3f64f5, type: 2}
   _UIDialog: {fileID: 1720834178}
   _UIDialogAnswers: {fileID: 1720834177}
+  dialogue:
+    SentenceIndex: 0
+    LongSentence: 
+    ShortSentence: 
+    NomPersoActif: 
+    IsEndingSentence: 0
+    answer1: 0
+    answer2: 0
+    QuestStarted: 0
 --- !u!1 &1044725888
 GameObject:
   m_ObjectHideFlags: 0
@@ -1879,6 +1888,7 @@ MonoBehaviour:
   _AnswerButton:
   - {fileID: 1044725892}
   - {fileID: 646110727}
+  _dialogSystem: {fileID: 1035080171}
 --- !u!114 &1720834178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2113,7 +2123,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1859947801
 RectTransform:
   m_ObjectHideFlags: 0

@@ -8,6 +8,7 @@ public class UIDialogAnswers : MonoBehaviour
 {
     [SerializeField] GameObject _AnswersPanel;
     [SerializeField] Button[] _AnswerButton;
+    [SerializeField] DialogSystem _dialogSystem;
 
     public void ShowAnswers(string[]answers)
     {
@@ -27,5 +28,6 @@ public class UIDialogAnswers : MonoBehaviour
         {
             _AnswersPanel.SetActive(true);
         }
+        
     }
 }

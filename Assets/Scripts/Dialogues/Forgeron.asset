@@ -34,7 +34,7 @@ MonoBehaviour:
     LongSentence: Rieng
     ShortSentence: Rien
     NomPersoActif: Joueur
-    IsEndingSentence: 1
+    IsEndingSentence: 0
     answer1: 3
     answer2: -1
     QuestStarted: 0

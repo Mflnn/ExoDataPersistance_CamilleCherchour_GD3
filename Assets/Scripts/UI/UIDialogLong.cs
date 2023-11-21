@@ -8,6 +8,7 @@ public class UIDialogLong : MonoBehaviour
     [SerializeField] GameObject _DialogPanel;
     [SerializeField] TMP_Text _longSentenceText;
 
+
     public void ShowLongDialog(string LongSentence)
     {
         _longSentenceText.text = LongSentence;
@@ -16,6 +17,7 @@ public class UIDialogLong : MonoBehaviour
             _DialogPanel.SetActive(true);
         }
     }
+
 
     public void HideDialog()
     {
