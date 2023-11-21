@@ -8,6 +8,7 @@ public class Quest : ScriptableObject
     [SerializeField] public bool IsFinished = false;
     [SerializeField] public bool IsStarted = false;
     public Objective[] Objectives;
+    public UIQuest _uiQuest;
 
    
    public void QuestFinished()
@@ -54,6 +55,7 @@ public class Quest : ScriptableObject
             if (collectible.collectibleType == Objectives[i].CollectibleType)
             {
                 Objectives[i].ActualValue += collectible._value;
+                //_uiQuest.UpdateObjectiveUI();
                 CheckObjective(i);
                 break;
             }

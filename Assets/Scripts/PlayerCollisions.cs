@@ -9,8 +9,7 @@ public class PlayerCollisions : MonoBehaviour
         ICollectible iCollect = other.GetComponent<Collectible>();
         if (iCollect != null)
         {
-            iCollect.Collect();
-            
+            iCollect.Collect();           
         }
 
         IPNJ iPNJ = other.GetComponent<PNJ>();
