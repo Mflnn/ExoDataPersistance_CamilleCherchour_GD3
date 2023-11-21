@@ -39,7 +39,7 @@ public class Quest : ScriptableObject
 
     public void CheckObjective(int NumObject)
     {
-        if (Objectives[NumObject].ActualValue == Objectives[NumObject].MaxValue)
+        if (Objectives[NumObject].ActualValue >= Objectives[NumObject].MaxValue)
         {
             Objectives[NumObject].IsFinished = true;
             CheckQuest();
@@ -54,6 +54,7 @@ public class Quest : ScriptableObject
             {
                 Objectives[i].ActualValue += collectible._value;
                 CheckObjective(i);
+                break;
             }
             
         }

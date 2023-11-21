@@ -17,7 +17,7 @@ public class UIDialogLong : MonoBehaviour
         }
     }
 
-    public void HidDialog()
+    public void HideDialog()
     {
         _DialogPanel.SetActive(false);
     }
