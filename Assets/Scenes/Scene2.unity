@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1525,8 +1525,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7871ccb7fe651e42a35a53b1d47a98a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _ScoreData: {fileID: 11400000, guid: 313b569cfdc21e5479019c5f0687cd77, type: 2}
-  _quete: {fileID: 11400000, guid: 5babb0fad6d74e14abe2ec62f4fbcd5a, type: 2}
+  _uiQuest: {fileID: 1209703680}
+  _questData: {fileID: 11400000, guid: 5babb0fad6d74e14abe2ec62f4fbcd5a, type: 2}
 --- !u!4 &611107545
 Transform:
   m_ObjectHideFlags: 0
@@ -1625,7 +1625,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1035080171}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DialogSystem, Assembly-CSharp
         m_MethodName: SelectAnswer
         m_Mode: 3
@@ -2030,149 +2030,6 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &1035080165
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1035080170}
-  - component: {fileID: 1035080169}
-  - component: {fileID: 1035080168}
-  - component: {fileID: 1035080167}
-  - component: {fileID: 1035080166}
-  - component: {fileID: 1035080171}
-  m_Layer: 0
-  m_Name: PNJ
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!136 &1035080166
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1035080165}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &1035080167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1035080165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c23a87c090fe314bb2b48fe12099d14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Quete: {fileID: 11400000, guid: 5babb0fad6d74e14abe2ec62f4fbcd5a, type: 2}
-  StartSentence: 0
-  EndSentence: 6
-  IntermediateSentence: 5
---- !u!23 &1035080168
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1035080165}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1035080169
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1035080165}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1035080170
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1035080165}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.1, y: 0.32, z: 9.46}
-  m_LocalScale: {x: 1.1768, y: 1.1768, z: 1.1768}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1035080171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1035080165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba381e0379a8f5044b80939b0c987b94, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _DialogDatas: {fileID: 11400000, guid: 0525f8bb13c828240a2e897b6f3f64f5, type: 2}
-  _UIDialog: {fileID: 1720834178}
-  _UIDialogAnswers: {fileID: 1720834177}
-  _Player: {fileID: 1956359616}
-  quest: {fileID: 11400000, guid: 5babb0fad6d74e14abe2ec62f4fbcd5a, type: 2}
-  _UIQuest: {fileID: 1209703680}
 --- !u!1 &1044725888
 GameObject:
   m_ObjectHideFlags: 0
@@ -2294,7 +2151,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1035080171}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DialogSystem, Assembly-CSharp
         m_MethodName: SelectAnswer
         m_Mode: 3
@@ -3645,7 +3502,7 @@ MonoBehaviour:
   _AnswerButton:
   - {fileID: 1044725892}
   - {fileID: 646110727}
-  _dialogSystem: {fileID: 1035080171}
+  _dialogSystem: {fileID: 0}
 --- !u!114 &1720834178
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5128,6 +4985,5 @@ SceneRoots:
   - {fileID: 1305764531}
   - {fileID: 611107545}
   - {fileID: 1867236750}
-  - {fileID: 1035080170}
   - {fileID: 1415813235}
   - {fileID: 1732923339}

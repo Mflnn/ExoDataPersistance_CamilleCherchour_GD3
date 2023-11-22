@@ -911,8 +911,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7871ccb7fe651e42a35a53b1d47a98a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _ScoreData: {fileID: 11400000, guid: 313b569cfdc21e5479019c5f0687cd77, type: 2}
-  _quete: {fileID: 11400000, guid: 5babb0fad6d74e14abe2ec62f4fbcd5a, type: 2}
+  _uiQuest: {fileID: 1209703680}
+  _questData: {fileID: 11400000, guid: 5babb0fad6d74e14abe2ec62f4fbcd5a, type: 2}
 --- !u!4 &611107545
 Transform:
   m_ObjectHideFlags: 0
