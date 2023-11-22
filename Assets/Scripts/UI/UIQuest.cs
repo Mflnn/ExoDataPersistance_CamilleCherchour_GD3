@@ -7,7 +7,12 @@ using UnityEngine.UI;
 public class UIQuest : MonoBehaviour
 {
     [SerializeField] GameObject _questPanel;
-    [SerializeField] Quest _quest;
+
+    [SerializeField] Objective[] _objective;
+    
+    [SerializeField] TMP_Text BronzeValue;
+    [SerializeField] TMP_Text IronValue;
+    [SerializeField] TMP_Text GoldValue;
 
     public void ShowQuestUI()
     {
@@ -17,10 +22,20 @@ public class UIQuest : MonoBehaviour
     {
         _questPanel.SetActive(false);
     }
-    public void UpdateObjectiveUI()
+
+    public void OnEnable()
     {
-        _quest.Objectives[0].ActualValue.ToString();
-        _quest.Objectives[1].ActualValue.ToString();
-        _quest.Objectives[2].ActualValue.ToString();
+        Quest.OnQuestUpdate += UpdateObjectiveUI;
+    }
+
+    private void OnDisable()
+    {
+        Quest.OnQuestUpdate -= UpdateObjectiveUI;
+    }
+    public void UpdateObjectiveUI(int scoreValue)
+    {
+       BronzeValue.text = _objective[0].ActualValue.ToString();
+       IronValue.text = _objective[1].ActualValue.ToString();
+       GoldValue.text = _objective[2].ActualValue.ToString();
     }
 }

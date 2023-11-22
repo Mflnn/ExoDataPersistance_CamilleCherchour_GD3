@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static ScoreDatas;
 
 public class Collectible : MonoBehaviour,ICollectible
 {
@@ -9,10 +10,13 @@ public class Collectible : MonoBehaviour,ICollectible
     public string collectibleType;
     [SerializeField] Quest _questData;
 
+
+
     public void Collect()
     {
         _questData.UpdateObjective(this);
-        //_scoreData.UpdateScoreValue(_value);
+       
+
         Destroy(gameObject);
     }
 }

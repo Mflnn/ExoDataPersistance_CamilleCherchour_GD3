@@ -287,6 +287,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _quete: {fileID: 11400000, guid: 5babb0fad6d74e14abe2ec62f4fbcd5a, type: 2}
+  _objective:
+  - {fileID: 11400000, guid: 602e5b0d09f3edd419de9f4eec7b9f00, type: 2}
+  - {fileID: 11400000, guid: 73c0d3d4465e6684e8757b6d4fe6c1e6, type: 2}
+  - {fileID: 11400000, guid: fbbc8d06afed3c342bc50c8c1dbd59b0, type: 2}
 --- !u!4 &622333758
 Transform:
   m_ObjectHideFlags: 0

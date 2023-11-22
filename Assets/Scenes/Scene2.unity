@@ -1041,7 +1041,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: /6
+  m_text: /2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2669,7 +2669,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _questPanel: {fileID: 1209703675}
-  _quest: {fileID: 11400000, guid: 5babb0fad6d74e14abe2ec62f4fbcd5a, type: 2}
+  _objective:
+  - {fileID: 11400000, guid: 602e5b0d09f3edd419de9f4eec7b9f00, type: 2}
+  - {fileID: 11400000, guid: 73c0d3d4465e6684e8757b6d4fe6c1e6, type: 2}
+  - {fileID: 11400000, guid: fbbc8d06afed3c342bc50c8c1dbd59b0, type: 2}
+  BronzeValue: {fileID: 1592178502}
+  IronValue: {fileID: 830981032}
+  GoldValue: {fileID: 1540663184}
 --- !u!1 &1305764528
 GameObject:
   m_ObjectHideFlags: 0

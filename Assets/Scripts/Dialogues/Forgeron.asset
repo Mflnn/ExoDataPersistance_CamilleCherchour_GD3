@@ -79,6 +79,6 @@ MonoBehaviour:
     ShortSentence: ...
     NomPersoActif: PNJ
     IsEndingSentence: 1
-    answer1: 7
+    answer1: -1
     answer2: -1
     QuestStarted: 0

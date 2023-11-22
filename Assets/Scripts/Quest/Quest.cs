@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static ScoreDatas;
 
 [CreateAssetMenu(menuName = "QuestData")]
 public class Quest : ScriptableObject
@@ -8,10 +9,13 @@ public class Quest : ScriptableObject
     [SerializeField] public bool IsFinished = false;
     [SerializeField] public bool IsStarted = false;
     public Objective[] Objectives;
-    public UIQuest _uiQuest;
+    public delegate void ScoreUpdate(int value);
+    public static event ScoreUpdate OnQuestUpdate;
 
-   
-   public void QuestFinished()
+
+
+
+    public void QuestFinished()
     {
         IsFinished = true;
 
@@ -55,8 +59,8 @@ public class Quest : ScriptableObject
             if (collectible.collectibleType == Objectives[i].CollectibleType)
             {
                 Objectives[i].ActualValue += collectible._value;
-                //_uiQuest.UpdateObjectiveUI();
                 CheckObjective(i);
+                OnQuestUpdate?.Invoke(1);
                 break;
             }
             
