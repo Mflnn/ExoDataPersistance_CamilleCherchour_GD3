@@ -5,15 +5,31 @@ using UnityEngine.SceneManagement;
 
 public class SceneChange : MonoBehaviour
 {
+
+    private int sceneNumber;
+
     private void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene(2);
+        sceneNumber = SceneManager.GetActiveScene().buildIndex;
+        if (sceneNumber == 1)
+        {
+            SceneManager.LoadScene(2);
+            Debug.Log(SceneManager.GetActiveScene().buildIndex);
+        } else
+        {
+            SceneManager.LoadScene(1);
+            Debug.Log(SceneManager.GetActiveScene().buildIndex);
+        }
+        
     }
 
     public void StartGame()
     {
         SceneManager.LoadScene(1);
+
+        
     }
+
 
 
 }
