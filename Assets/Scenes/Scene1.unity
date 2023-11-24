@@ -623,6 +623,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e44c4189f62f834e858a6c5dc9a079a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  uiQuest: {fileID: 1209703680}
+  scoreValueBronze: 0
+  scoreValueIron: 0
+  scoreValueGold: 0
+  objectives:
+  - {fileID: 11400000, guid: 602e5b0d09f3edd419de9f4eec7b9f00, type: 2}
+  - {fileID: 11400000, guid: 73c0d3d4465e6684e8757b6d4fe6c1e6, type: 2}
+  - {fileID: 11400000, guid: fbbc8d06afed3c342bc50c8c1dbd59b0, type: 2}
 --- !u!23 &341525293
 MeshRenderer:
   m_ObjectHideFlags: 0
