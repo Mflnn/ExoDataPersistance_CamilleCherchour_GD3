@@ -23,15 +23,14 @@ public class SceneChange : MonoBehaviour
         if (sceneNumber == 1)
         {
             SceneManager.LoadScene(2);
-            Debug.Log(SceneManager.GetActiveScene().buildIndex);
         } else
         {
             SceneManager.LoadScene(1);
-            Debug.Log(SceneManager.GetActiveScene().buildIndex);
 
             uiQuest.UpdateObjectiveUI(scoreValueBronze);
             uiQuest.UpdateObjectiveUI(scoreValueIron);
             uiQuest.UpdateObjectiveUI(scoreValueGold);
+            Debug.Log("update");
         }
         
     }
