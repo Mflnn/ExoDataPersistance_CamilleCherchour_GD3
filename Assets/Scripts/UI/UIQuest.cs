@@ -26,12 +26,9 @@ public class UIQuest : MonoBehaviour
     public void OnEnable()
     {
         Quest.OnQuestUpdate += UpdateObjectiveUI;
+        UpdateObjectiveUI(4);
     }
 
-    private void OnDisable()
-    {
-        Quest.OnQuestUpdate -= UpdateObjectiveUI;
-    }
     public void UpdateObjectiveUI(int scoreValue)
     {
        BronzeValue.text = _objective[0].ActualValue.ToString();
