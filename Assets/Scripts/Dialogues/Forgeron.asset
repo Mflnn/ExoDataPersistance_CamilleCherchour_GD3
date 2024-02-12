@@ -23,7 +23,8 @@ MonoBehaviour:
     answer2: 2
     QuestStarted: 0
   - SentenceIndex: 1
-    LongSentence: S'il vous plaiiit
+    LongSentence: "S'il vous plaiiit ! Je suis Fan de Cloud et je veux une \xE9p\xE9e
+      comme luiii !"
     ShortSentence: Please
     NomPersoActif: Joueur
     IsEndingSentence: 0
